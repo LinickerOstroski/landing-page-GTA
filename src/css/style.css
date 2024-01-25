@@ -6,4 +6,9 @@ body{
 .cabecalho{
     height: 80px; /* altura*/
     background-color: #0b0b0b;
+    display: flex; /* deixou os elementos um do lado do outro*/
+    justify-content: space-between; /*espaço entre os filhos horizontalmente*/
+    align-items: center; /* alinha verticalmente*/
+    padding: 0 80px; /*espaçamento interno do elemento*/
+    border-bottom: 2px solid #2e2e2e;
 }
