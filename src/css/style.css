@@ -1,36 +1,85 @@
-body{
-    background-color: #282828;
-    color: #fff; /* Cor das fontes */
+body {
+  background-color: #282828;
+  color: #fff; /* Cor das fontes */
 }
 
-.cabecalho{
-    height: 80px; /* altura*/
-    background-color: #0b0b0b;
-    display: flex; /* deixou os elementos um do lado do outro*/
-    justify-content: space-between; /*espaço entre os filhos horizontalmente*/
-    align-items: center; /* alinha verticalmente*/
-    padding: 0 80px; /*espaçamento interno do elemento*/
-    border-bottom: 2px solid #2e2e2e;
+.cabecalho {
+  height: 80px; /* altura*/
+  background-color: #0b0b0b;
+  display: flex; /* deixou os elementos um do lado do outro*/
+  justify-content: space-between; /*espaço entre os filhos horizontalmente*/
+  align-items: center; /* alinha verticalmente*/
+  padding: 0 80px; /*espaçamento interno do elemento*/
+  border-bottom: 3px solid #2e2e2e;
 }
 
-.cabecalho .logo{
+.cabecalho .logo {
+  display: flex;
+  gap: 15px;
+}
+
+.cabecalho .menu {
+  display: flex;
+  gap: 30px;
+}
+
+.cabecalho .menu li a {
+  padding: 30px;
+  color: #e8e8e8;
+  font-weight: bolder;
+  font-size: 15px;
+  font-family: "Chalet";
+}
+
+.cabecalho .menu li a:hover {
+  border-bottom: 3px solid #fff;
+}
+
+.home {
+  display: flex;
+  position: relative;
+  min-height: calc(100vh - 80px);
+}
+
+.home::after {
+  background-color: aqua;
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.8323704481792717) 0%,
+    rgba(1, 0, 10, 0.6194852941176471) 25%,
+    rgba(0, 0, 0, 0.47942927170868344) 44%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.home .imagem-fundo{
+    width: 100%;
+    object-fit: cover;
+}
+
+.home .informacoes{
+    position: absolute;
+    z-index: 1; /*deixar em cima do gradiente*/
+    min-height: calc(100vh - 80px);
     display: flex;
-    gap: 15px;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+    padding: 80px 80px 80px 170px;
+    max-width: 780px;
 }
 
-.cabecalho .menu{
+.home .informacoes img{
+    max-width: 150px;
+}
+
+.home .informacoes .lista-de-jogos{
     display: flex;
-    gap: 30px
+    gap: 32px;
 }
 
-.cabecalho .menu li a{
-    padding: 30px;
-    color: #e8e8e8;
-    font-weight: bolder;
-    font-size: 15px;
-    font-family: 'Chalet';
-}
-
-.cabecalho .menu li a:hover{
-    border-bottom: 3px solid #fff
-}
