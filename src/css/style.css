@@ -29,6 +29,7 @@ body {
   font-weight: bolder;
   font-size: 15px;
   font-family: "Chalet";
+  
 }
 
 .cabecalho .menu li a:hover {
@@ -81,5 +82,34 @@ body {
 .home .informacoes .lista-de-jogos{
     display: flex;
     gap: 32px;
+}
+
+.home .informacoes .titulo{
+    font-family: 'ChaletComprime';
+    font-size: 55px;
+}
+
+.home .informacoes .texto{
+    font-family: 'ChaletComprime';
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.btn-comprar{
+    background-color: rgba(255,255,255, .2);
+    border: 0.5px solid #fff;
+    border-radius: 4px;
+    font-family: 'ChaletComprime';
+    font-size: 28px;
+    text-align: center;
+    padding: 20px 40px;
+    text-transform: uppercase;
+    width: 50%;
+    transition: all .2s ease-in;
+}
+
+.btn-comprar:hover{
+    background-color: #fff;
+    color: #000;
 }
 
