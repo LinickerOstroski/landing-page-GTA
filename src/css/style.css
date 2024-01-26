@@ -12,3 +12,25 @@ body{
     padding: 0 80px; /*espaçamento interno do elemento*/
     border-bottom: 2px solid #2e2e2e;
 }
+
+.cabecalho .logo{
+    display: flex;
+    gap: 15px;
+}
+
+.cabecalho .menu{
+    display: flex;
+    gap: 30px
+}
+
+.cabecalho .menu li a{
+    padding: 30px;
+    color: #e8e8e8;
+    font-weight: bolder;
+    font-size: 15px;
+    font-family: 'Chalet';
+}
+
+.cabecalho .menu li a:hover{
+    border-bottom: 3px solid #fff
+}
